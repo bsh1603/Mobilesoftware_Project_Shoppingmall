@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="9"-->
+<!--            android:text="ICE.COM"-->
+<!--            android:textSize="30sp" />-->
+        <ImageView
+            android:id="@+id/sub_logo"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:text="detail_title"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <View
+            android:background="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:id="@+id/imagelinearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/avante01"/>
+            <ImageView
+                android:id="@+id/detail_image02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/avante02"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/imagelinearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_image03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/avante03"/>
+            <ImageView
+                android:id="@+id/detail_image04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/avante04"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제조사 : 현대 | 국산 | 준중형"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/detail_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연비 : 10.5~15.4km/ℓ"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/detail_fuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연료 : 가솔린, LPG"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/detail_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출력 : 120-240hp"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가격 : 1,570~2,779만원"
+                android:layout_marginStart="20dp"
+                android:textColor="#0000FF"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/detail_Site2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="더 많은 정보를 보시려면 클릭하세요"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/detail_Site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="url"
+                android:textSize="15sp"
+                android:linksClickable="true"
+                android:autoLink="web"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#0000FF"
+            android:onClick="onClickShowAlert"
+            android:text="결제하기"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
